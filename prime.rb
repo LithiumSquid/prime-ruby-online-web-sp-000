@@ -5,5 +5,3 @@ def prime?(num)
   else if num % n > 0
     return true
 end
-end
-end
