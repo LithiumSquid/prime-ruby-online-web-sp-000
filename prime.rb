@@ -1,6 +1,8 @@
 def prime?(num)
   prime_array = []
   (2..(num - 1)).each{|n| prime_array << n}
-    if num % prime_array == 
+    final = num % prime_array
+    if float?(final)  
       return false
-    else 
+    else
+      return true
