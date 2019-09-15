@@ -1,7 +1,4 @@
 def prime?(num)
   prime_array = []
-  (2..(num - 1)).each do |n|
-    return false if num % n == 0
-  end
-  true
-end
+  (2..(num - 1)).each{|n| prime_array << n}
+   if prime_array.any?{|p| p 
