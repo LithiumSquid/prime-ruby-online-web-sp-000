@@ -1,7 +1,8 @@
 def prime?(num)
-  (2..(num - 1)).each do |n|
-    if num % n == 0
-      return false 
-  else if num % n > 0
-    return true
+  n = 2
+  while n < num
+    return false if num % n == 0
+    n += 1
+  end
+  true
 end
