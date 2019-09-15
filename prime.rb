@@ -1,2 +1,2 @@
 def prime?(num)
-  if num.prime?
+  if num
